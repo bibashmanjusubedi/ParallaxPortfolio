@@ -1,0 +1,49 @@
+const words = ["Software Engineer", "Researcher"];
+const typewriter = document.getElementById("typewriter");
+
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = '';
+let isDeleting = false;
+
+function typeEffect() {
+    currentWord = words[wordIndex]; // FIXED: was currentword
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+    typewriter.textContent = currentWord.substring(0, charIndex);
+
+    let speed = isDeleting ? 40 : 100;
+
+    // FIXED: currentWord.length (not Length)
+    if (!isDeleting && charIndex === currentWord.length) {
+        speed = 1200; // wait before deleting
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        speed = 500; // wait before typing next
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
+
+
+// Blur loading effect
+const bg = document.querySelector('.bg');
+let load = 0;
+
+function blurring() {
+    load++;
+    if (load > 99) return;
+    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+    requestAnimationFrame(blurring);
+}
+function scale(num, in_min, in_max, out_min, out_max) {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+}
+blurring();
