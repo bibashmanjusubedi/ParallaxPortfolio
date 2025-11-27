@@ -111,3 +111,64 @@ nav ul li.right{
 .about-text{
     text-align: justify;
 }
+
+
+#experience{
+    padding:40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#experience h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.exp-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+.exp-item{
+    background:#fff;
+    border-radius: 12px;
+    padding:18px 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    flex: 1 1 280px;
+    max-width: 320px;
+}
+
+.exp-header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:12px;
+}
+
+.exp-header h3{
+    margin:0 auto;
+    font-size: 1.1rem;
+}
+
+.exp-header h4{
+    margin:2px 0 0;
+    font-weight: 500;
+    color:#555;
+}
+
+.exp-logo{
+    width:60px;
+    height:auto;
+    object-fit: contain;
+}
+
+.exp-desc{
+    margin-top:10px;
+    margin-bottom: 0;
+    color:#333;
+    text-align: justify;
+    font-size:0.95rem;
+}
