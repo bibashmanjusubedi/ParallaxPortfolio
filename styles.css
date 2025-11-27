@@ -107,3 +107,7 @@ nav ul li.right{
     height:auto;
     border-radius: 10px;
 }
+
+.about-text{
+    text-align: justify;
+}
