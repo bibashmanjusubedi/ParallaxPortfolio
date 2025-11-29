@@ -181,3 +181,56 @@ nav ul li.right{
     font-size:0.95rem;
     text-align: center;
 }
+
+#milestones-projects{
+    padding:40px 20px;
+    max-width: 1000px;
+    margin:0 auto 40px;   
+}
+
+
+#milestones-projects h2{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.milestones-card{
+    background:#fff;
+    border-radius: 12px;
+    padding:24px 28px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+.projects-title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.projects-row{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+
+.project-card{
+    background:#fff;
+    border-radius: 12px;
+    padding:18px 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    flex:1 1 260px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.project-card h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.project-card p{
+    margin:0;
+    font-size: 0.95rem;
+    color:#333;
+}
