@@ -47,3 +47,38 @@ function scale(num, in_min, in_max, out_min, out_max) {
     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 }
 blurring();
+
+
+// Skills Progress Bar Animation
+function animateSkills() {
+    const progressBars = document.querySelectorAll('.skill-progress');
+    
+    progressBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        bar.style.width = width + '%';
+    });
+}
+
+// Trigger animation when skills section is visible
+function handleScrollAnimation() {
+    const skillsSection = document.getElementById('skills');
+    const skillsRect = skillsSection.getBoundingClientRect();
+    
+    if (skillsRect.top < window.innerHeight * 0.8) {
+        animateSkills();
+        window.removeEventListener('scroll', handleScrollAnimation);
+    }
+}
+
+// Add scroll listener
+window.addEventListener('scroll', handleScrollAnimation);
+
+// Also trigger on page load if already visible
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(handleScrollAnimation, 500);
+    });
+} else {
+    setTimeout(handleScrollAnimation, 500);
+}
+
