@@ -572,3 +572,188 @@ html.dark-mode nav ul li.right i{
 html.dark-mode nav ul li.right i:hover{    
     color:#ffd700;
 }
+
+
+/* Tablet styles(577-768)px */
+@media only screen and (min-width:577px) and (max-width:768px){
+    /* Milestones section - stack image above text */
+    #milestones .milestones-card {
+        flex-direction: column;
+        text-align: center;
+        padding:20px 18px;
+        gap:16px;
+    }
+
+    #milestones .milestone-img{
+        width:100%;
+        max-width: 380px;
+        height:240px;
+        margin:0 auto;
+        border-radius: 10px;
+    }
+
+    #milestones .milestone-text{
+        flex:none;
+        max-width: 100%;
+        padding:0 8px;
+    }
+
+    /* Section padding adjustment */
+    #milestones {
+        padding:32px 16px;        
+    }
+
+    #milestones h2{
+        margin-bottom: 24px;
+        font-size: 1.6rem;
+    }
+
+    /* Dark Mode Compatiblity */
+    html.dark-mode #milestones .milestones-card{
+        background:#2a2a2a;
+    }
+
+    #projects .projects-row{
+        flex-direction: column;   /* stack the cards */
+        align-items: center;
+    }
+
+    #projects .project-card{
+        display:flex;
+        max-width: 320px;
+        width:100%;
+        height:auto;
+        min-height: 180px;
+        margin-bottom: 20px;
+    }
+
+    #projects .project-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;  /* content at center */
+        height:100%;
+    }
+
+    #projects .project-link { 
+        margin-top:15%;   /* pushes link to bottom of column */
+        align-self: center;  /* center horizontally */
+    }
+
+    html.dark-mode #projects .project-card{
+        background:#2a2a2a;
+    }
+
+
+    #skills .skill-container{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    #skills .skill-item{
+        flex-direction:row;
+        align-items: center;
+        max-width: 500px;
+        width:100%;
+        margin:0 auto;
+        padding:20px;
+    }
+
+    #skills .skill-header{
+        flex:0 0 120px;
+        justify-content: flex-start;
+    }
+
+    #skills .skill-bar{
+        flex:50%;
+        max-width: 350px;
+    }
+
+    #milestones h2,
+    #skills h2,
+    #projects h2 {
+        margin-bottom: 24px;
+        font-size: 1.6rem;
+    }
+
+    html.dark-mode #skills .skill-item {
+        background: #2a2a2a;
+    }
+
+
+    footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .footer-main{
+        max-width: 1000px;
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        gap:24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-column{
+        flex:0 1 260px;           /* shrink-to-content columns */
+        display: flex;
+        flex-direction: column;
+        align-items: center;      /* center content inside each column */
+    }
+
+    .footer-bottom{
+        max-width: 1000px;
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-socials{
+        display:flex;
+        gap:12px;
+        margin-top: 6px;
+    }
+
+    .footer-socials a{
+        width:24px;
+        height:34px;
+        border-radius: 50%;
+        border:1px solid #f1f1f1;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:#f1f1f1;
+        text-decoration: none;
+        padding:0;
+    }
+
+    
+    .footer-socials a:hover {
+        background-color: #f1f1f1;
+        color: #000;
+        transform: translateY(-2px);
+        opacity: 1;
+    }
+
+    .footer-socials a i {
+        pointer-events: none;   /* clicks on the whole circle, not only icon glyph */
+    }
+
+
+    #experience .exp-row{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    #experience .exp-item {
+        flex: none;               /* ignore flex: 1 1 280px; */
+        max-width: 320px;         /* keep same card width */
+        width: 100%;
+        margin:0;      /* spacing between cards */
+    }
+}
