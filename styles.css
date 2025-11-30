@@ -757,3 +757,113 @@ html.dark-mode nav ul li.right i:hover{
         margin:0;      /* spacing between cards */
     }
 }
+
+
+/*Mobile styles */
+@media only screen and (max-width:576px){
+    #about .about-content{
+        flex-direction: column;
+        gap:20px;
+        text-align: center;
+    }
+
+    #about .about-content figure,
+    #about .about-content .about-text{
+        flex:none;
+        max-width: 100%;
+        align-items: justify;
+    }
+
+    #about .about-content figure{
+        order:-1;
+    };
+
+    #about .about-text {
+        text-align:left;
+        padding: 0 10px;
+    }
+
+    .footer-main{
+        flex-direction: column;
+        align-items: center;
+        gap:25px;
+        text-align: center;
+    }
+
+    .footer-column{
+        flex:none;
+        width:100%;
+        max-width: 300px;
+    }
+
+    .footer-column h2{
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    #about{
+        padding: 30px 15px;
+    }
+
+    #about h2{
+        font-size: 1.5rem;
+        margin-bottom:25px;
+    }
+
+
+    html.dark-mode #about .about-content{
+        gap:20px;
+    }
+
+    .footer-socials a {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid #f1f1f1;
+        display: flex;
+        align-items: center;       /* Vertically center icon */
+        justify-content: center;   /* Horizontally center icon */
+        color: #f1f1f1;
+        font-size: 1rem;
+        padding: 0;
+        opacity: 0.9;
+    }
+
+    .footer-socials{
+        display:flex;
+        gap:12px;
+        margin-top:6px;
+        justify-content: center;
+    }
+
+
+
+
+    #milestones .milestones-card{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 18px;
+        gap:20px;
+    }
+
+    #milestones .milestone-img{
+        width:100%;
+        max-width: 300px;
+        height:200px;
+        margin:0 auto;
+        order:-1;
+    }
+
+    #milestones{
+        padding: 30px 15px;
+    }
+
+    #milestones h2{
+        font-size: 1.5 rem;
+        margin-bottom: 25px;
+    }
+
+    html.dark-mode #milestone .milestones-card{
+        background:#2a2a2a;
+    }
+}
