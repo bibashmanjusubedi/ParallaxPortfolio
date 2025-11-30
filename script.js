@@ -82,3 +82,38 @@ if (document.readyState === 'loading') {
     setTimeout(handleScrollAnimation, 500);
 }
 
+
+// Dark mode toggle functionality
+const themeToggle = document.querySelector('nav ul li.right i');
+const html = document.documentElement;
+let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+function initTheme(){
+    if(isDarkMode){
+        html.classList.add('dark-mode');
+        themeToggle.className = 'fa-solid fa-sun';
+    } else {
+        html.classList.remove('dark-mode');
+        themeToggle.className = 'fa-solid fa-moon';
+    }
+}
+
+function toggleTheme(){
+    isDarkMode = !isDarkMode;
+    html.classList.toggle('dark-mode');
+
+    if (isDarkMode){
+        themeToggle.className = 'fa-solid fa-sun';
+        localStorage.setItem = ('darkMode','true')
+    }
+    else{
+        themeToggle.className = 'fa-solid fa-moon';
+        localStorage.removeItem('darkMode');
+    }
+
+}
+
+themeToggle.addEventListener('click',toggleTheme);
+
+// Initialize theme on page load
+initTheme();

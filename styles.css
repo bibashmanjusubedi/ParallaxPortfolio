@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    background:url('graduationPic.jpg') center center/contain no-repeat, rgba(0,0,0,0.3);; /* fallback solid color */; /* fallback solid color */;
+    background:url('graduationPic.jpg') center center/contain no-repeat, rgba(0,0,0,0.3); /* fallback solid color */
     color: #fff;
     position: relative;
     top:0;
@@ -463,4 +463,25 @@ footer {
     text-align: center;
     font-size: 0.85rem;
     color: #ccc;
+}
+
+
+/* Dark mode styles */
+
+/* Dark mode base styles */
+
+html.dark-mode{
+    background:#1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark-mode body{
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+html.dark-mode header {
+    background:
+        linear-gradient(rgba(64,64,64,0.3), rgba(64,64,64,0.3)),  /* Layer 1: GRAY overlay */
+        url('graduationPic.jpg') center center/contain no-repeat;    /* Layer 2: Image */
 }
