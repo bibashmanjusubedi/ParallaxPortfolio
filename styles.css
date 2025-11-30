@@ -490,74 +490,79 @@ html.dark-mode header {
         url('graduationPic.jpg') center center/contain no-repeat;    /* Layer 2: Image */
 }
 
-
-html.dark-mode nav ul{
-    background: rba(0,0,0,0.7);
+html.dark-mode nav ul {
+    background: rgba(0,0,0,0.7);
 }
 
-html.dark-mode nav ul li a{
-    color:#f0f0f0;
+html.dark-mode nav ul li a {
+    color: #f0f0f0;
 }
 
-html.dark-mode nav ul li:hover{
-    color:#ffd700;
+html.dark-mode nav ul li a:hover {
+    color: #ffd700;
 }
 
 /* Dark mode first section */
-html.dark-mode .firstSection{
+html.dark-mode .firstSection {
     background: rgba(0,0,0,0.8);
 }
 
-/* Dark Mode cards and sections */
+/* Dark mode cards and sections */
 html.dark-mode .exp-item,
 html.dark-mode .milestones-card,
-html.dark-mode .projects-card,
-html.dark-mode .skill-item{
-    background:#2a2a2a;
-    color:#e0e0e0;
-}
-
-
-html.dark-mode .exp-header h4{
-    color:#b0b0b0;
-}
-
-
-/* Dark Mode skills */
-html.dark-mode .skill-bar{
-    background:#404040;
-}
-
-html.dark-mode .skill-header span:first-child{
-    color:#e0e0e0;
-}
-
-/* Dark Mode about text */
-html.dark-mode .about-text{
-    color:#d0d0d0;
-}
-
-html.dark-mode .about-text p{
-    color:#d0d0d0;
-}
-
-/* Dark mode footer */
-html.dark-mode footer{
-    background-color: rba(20,20,20,0.95);
+html.dark-mode .project-card,
+html.dark-mode .skill-item {
+    background: #2a2a2a;
     color: #e0e0e0;
 }
 
-html.dark-mode .footer-column a{
-    color:#e0e0e0;
+html.dark-mode .exp-desc,
+html.dark-mode .project-card p,
+html.dark-mode .milestone-text p {
+    color: #d0d0d0;
 }
 
-html.dark-mode .footer-column a:hover{
-    color:#b0b0b0;
-}
-
-html.dark-mode .footer-bottom{
+html.dark-mode .exp-header h4 {
     color: #b0b0b0;
 }
+
+/* Dark mode skills */
+html.dark-mode .skill-bar {
+    background: #404040;
+}
+
+html.dark-mode .skill-header span:first-child {
+    color: #e0e0e0;
+}
+
+/* Dark mode about text */
+html.dark-mode .about-text {
+    color: #d0d0d0;
+}
+
+html.dark-mode .about-text p {
+    color: #d0d0d0;
+}
+
+/* Dark mode footer */
+html.dark-mode footer {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: #e0e0e0;
+}
+
+html.dark-mode .footer-column a {
+    color: #e0e0e0;
+}
+
+html.dark-mode .footer-column a:hover {
+    color: #ffd700;
+}
+
+html.dark-mode .footer-bottom {
+    color: #b0b0b0;
+}
+
+
 
 /* dark mode toggle button hover */
 html.dark-mode nav ul li.right i{
