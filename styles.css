@@ -866,4 +866,64 @@ html.dark-mode nav ul li.right i:hover{
     html.dark-mode #milestone .milestones-card{
         background:#2a2a2a;
     }
+
+
+    nav ul {
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between; /* space-betweeen*/
+        gap:0;
+        padding:0 8px;
+        margin:0;
+        width:100%;
+        box-sizing: border-box;
+    }
+
+    nav li {
+        flex:1;
+        text-align:center;
+        font-size:0.8rem;
+        white-space: nowrap;
+        list-style: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0 8px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    nav li {
+        flex: 1;
+        text-align: center;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        list-style: none;
+    }
+    
+    nav li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 6px 2px;
+        text-decoration: none;
+    }
+    
+    nav .right {
+        flex: 0 0 auto;
+        padding: 6px 8px;
+        order: 5;
+    }
+    
+    nav .right i {
+        font-size: 1.1rem;
+        display: block;
+    }
+    
+    
 }
