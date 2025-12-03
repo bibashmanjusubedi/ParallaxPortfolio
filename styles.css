@@ -879,14 +879,6 @@ html.dark-mode nav ul li.right i:hover{
         box-sizing: border-box;
     }
 
-    nav li {
-        flex:1;
-        text-align:center;
-        font-size:0.8rem;
-        white-space: nowrap;
-        list-style: none;
-    }
-
     nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -924,6 +916,15 @@ html.dark-mode nav ul li.right i:hover{
         font-size: 1.1rem;
         display: block;
     }
+
+    /* 5th li: content aligned to start (left inside its own box) */
+    nav ul li:nth-child(5){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:auto;
+    }
+
     
     
 }
