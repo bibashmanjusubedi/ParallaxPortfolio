@@ -867,18 +867,6 @@ html.dark-mode nav ul li.right i:hover{
         background:#2a2a2a;
     }
 
-
-    nav ul {
-        display:flex;
-        flex-wrap: nowrap;
-        justify-content: space-between; /* space-betweeen*/
-        gap:0;
-        padding:0 8px;
-        margin:0;
-        width:100%;
-        box-sizing: border-box;
-    }
-
     nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -925,6 +913,11 @@ html.dark-mode nav ul li.right i:hover{
         flex:auto;
     }
 
-    
-    
+    nav ul li:nth-child(4){
+        margin-left:auto;
+    }   
+
+    nav ul li:nth-child(5){
+        margin-right:auto;
+    }
 }
