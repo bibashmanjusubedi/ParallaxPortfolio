@@ -920,4 +920,8 @@ html.dark-mode nav ul li.right i:hover{
     nav ul li:nth-child(5){
         margin-right:auto;
     }
+
+    nav ul li:nth-child(4) ,nav ul li:nth-child(5){
+        padding-bottom: 50px;
+    }
 }
